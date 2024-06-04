@@ -1,2 +1,0 @@
-# PeterFuciik.github.io
-domain
