@@ -21,6 +21,26 @@
 		"sameAs": []
 		}
     </script>
+    <script>
+
+   const section = document.getElementById('carousel_4ce4');
+	
+  function showHideSection() {
+  const now = new Date();
+  const hours = now.getHours(); 
+
+  if (hours < 11 || hours > 14) {
+    section.style.display = 'none';
+  } else {
+    section.style.display = 'block';
+  }
+}
+
+window.onload = showHideSection;
+
+setInterval(showHideSection, 60000);
+	
+</script>
 	
     <meta name="theme-color" content="#123a5a">
     <meta property="og:title" content="Home">
