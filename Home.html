@@ -106,7 +106,7 @@
         </div>
       </div>
     </section>
-    <section class="u-clearfix u-container-align-center-lg u-container-align-center-xl u-image u-shading u-section-4" id="carousel_4ce4" data-image-width="1280" data-image-height="853">
+    <section class="u-clearfix u-container-align-center-lg u-container-align-center-xl u-image u-shading u-section-4" id="carousel_4ce4" data-image-width="1280" data-image-height="853" id="casoveomezeni">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-align-center u-text u-text-1">polední nabídka</h2>
         <div class="u-expanded-width u-layout-grid u-list u-list-1">
@@ -333,3 +333,23 @@
       </div></footer>
 </body>
 </html>
+<script>
+
+const section = document.getElementById('casoveomezeni');
+	
+  function showHideSection() {
+  const now = new Date();
+  const hours = now.getHours(); 
+
+  if (hours < 11 || hours > 14) {
+    section.style.display = 'none';
+  } else {
+    section.style.display = 'block';
+  }
+}
+
+window.onload = showHideSection;
+
+setInterval(showHideSection, 60000);
+	
+</script>
